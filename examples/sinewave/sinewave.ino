@@ -4,10 +4,8 @@
     @author   Adafruit Industries
     @license  BSD (see license.txt)
 
-    This example will generate a sine wave with the MCP4725 DAC.
+    This example will generate a sine wave with the MCP4726 DAC.
 
-    This is an example sketch for the Adafruit MCP4725 breakout board
-    ----> http://www.adafruit.com/products/935
 
     Adafruit invests time and resources providing this open source code,
     please support Adafruit and open-source hardware by purchasing
@@ -15,9 +13,9 @@
 */
 /**************************************************************************/
 #include <Wire.h>
-#include <Adafruit_MCP4725.h>
+#include <MCP4726.h>
 
-Adafruit_MCP4725 dac;
+MCP4726 dac;
 
 // Set this value to 9, 8, 7, 6 or 5 to adjust the resolution
 #define DAC_RESOLUTION    (8)
@@ -175,9 +173,7 @@ void setup(void) {
   Serial.begin(9600);
   Serial.println("Hello!");
 
-  // For Adafruit MCP4725A1 the address is 0x62 (default) or 0x63 (ADDR pin tied to VCC)
-  // For MCP4725A0 the address is 0x60 or 0x61
-  // For MCP4725A2 the address is 0x64 or 0x65
+  // Update the I2C address below depending on the version of the chip
   dac.begin(0x62);
 
   Serial.println("Generating a sine wave");

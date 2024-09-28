@@ -1,22 +1,14 @@
-Adafruit_MCP4725 [![Build Status](https://github.com/adafruit/Adafruit_MCP4725/workflows/Arduino%20Library%20CI/badge.svg)](https://github.com/adafruit/Adafruit_MCP4725/actions)
+MCP4726
 ================
 
-This is the Adafruit MCP4725 12-bit I2C DAC Driver library
+This is 12-bit I2C DAC Driver library for MCP4726 based on great work from Adafruit: [Adafruit_MCP4725](https://github.com/adafruit/Adafruit_MCP4725)
 
-Tested and works great with the Adafruit MCP4725 Breakout Board 
-    ------> http://www.adafruit.com/products/935
 
-This chip uses I2C to communicate, 2 pins are required to  
-interface
-
-Adafruit invests time and resources providing this open source code, 
-please support Adafruit and open-source hardware by purchasing 
-products from Adafruit!
-
-Written by Kevin Townsend/Limor Fried for Adafruit Industries.  
+Written by Kevin Townsend/Limor Fried for Adafruit Industries,
+with small improvements for MCP4726 by mfijas.
 BSD license, check license.txt for more information
 All text above must be included in any redistribution
 
-To download. click the DOWNLOADS button in the top right corner, rename the uncompressed folder Adafruit_MCP4725. Check that the Adafruit_MCP4725 folder contains Adafruit_MCP4725.cpp and Adafruit_MCP4725.h
+To download, click the DOWNLOADS button in the top right corner, rename the uncompressed folder MCP4726. Check that the MCP4726 folder contains MCP4726.cpp and MCP4726.h
 
-Place the Adafruit_MCP4725 library folder your arduinosketchfolder/libraries/ folder. You may need to create the libraries subfolder if its your first library. Restart the IDE.
+Place the MCP4726 library folder your arduinosketchfolder/libraries/ folder. You may need to create the libraries subfolder if its your first library. Restart the IDE.
